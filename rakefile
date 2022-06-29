@@ -1,0 +1,11 @@
+require_relative 'seen_file'
+# require_relative 'practice_rake/seen_file'
+require_relative 'Prac'
+require 'byebug'
+
+task :seen do
+#  pp ARGV[1]
+  Prac.new.seen(ARGV[1])
+  exit
+end
+
